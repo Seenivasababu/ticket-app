@@ -7,7 +7,7 @@ import { RxCross2 } from 'react-icons/rx';
 const DeleteBlock = ({ id }: { id: String }) => {
   const router = useRouter();
   const deleteTicket = async () => {
-    const res = await fetch(`http://localhost:3000/api/tickets/${id}`, {
+    const res = await fetch(`https://ticket-app-git-main-seenivasababus-projects.vercel.app/api/tickets/${id}`, {
       method: 'DELETE',
     });
 
